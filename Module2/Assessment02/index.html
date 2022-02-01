@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order something</title>
+
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="scripts/main.js" ></script>
+
+</head>
+<body onload="loadUp()">
+    <div class="item" id="item1">
+        <label for="item1">Select a food:</label>
+        <select name="foods" id="food" onclick="updateTotal(value, true, 'food')" onchange="updateTotal(value, false, 'food')">
+            <option value="none">none</option>
+            <option value="pizza">pizza</option>
+            <option value="nachos">nachos</option>
+            <option value="sandwhich">sandwhich</option>
+            <option value="chicken">chicken</option>
+            <option value="steak">steak</option>
+        </select>
+
+        <label for="item1">Select a drink</label>
+        <select name="drinks" id="drink" onclick="updateTotal(value, true, 'drink')" onchange="updateTotal(value, false, 'drink')">
+            <option value="none">none</option>
+            <option value="water">water</option>
+            <option value="tea">tea</option>
+            <option value="coffee">coffee</option>
+            <option value="cola">cola</option>
+            <option value="sprite">sprite</option>
+        </select>
+
+        <label for="item1">Select a dessert</label>
+        <select name="desserts" id="dessert" onclick="updateTotal(value, true, 'dessert')" onchange="updateTotal(value, false, 'dessert')">
+            <option value="none">none</option>
+            <option value="iceCream">ice cream</option>
+            <option value="applePie">apple pie</option>
+            <option value="cheeseCake">cheese cake</option>
+            <option value="cookie">cookie</option>
+            <option value="donut">donut</option>
+        </select>
+    </div>
+
+    <div class="pageLower">
+        <button type="button" onclick="payButton()">PAY</button>
+        <h3>total</h3>
+        <p id="totalCost"></p>
+        <h3>total food cost</h3>
+        <p id="totalFoods"></p>
+        <h3>total drink cost</h3>
+        <p id="totalDrinks"></p>
+        <h3>total dessert cost</h3>
+        <p id="totalDesserts"></p>
+    </div>
+</body>
+</html>
