@@ -29,7 +29,7 @@ for (i in fullYear) {
     switch(count){
         case 1:
             document.getElementById(count+"month").innerHTML = fullYear[i].name;
-            document.getElementById(count+"day").innerHTML = fullYear[i].holidays.toString();
+            document.getElementById(count+"day").innerHTML = fullYear[i].holidays;
         break;
         case 2:
             document.getElementById(count+"month").innerHTML = fullYear[i].name;
