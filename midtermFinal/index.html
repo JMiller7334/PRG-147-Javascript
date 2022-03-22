@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midterm Project</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>Tic-Tac-Toe</header>
+    <div class="container">
+        <div class="row"> 
+            <div class="col">
+                <div class="centering-box">
+                    <h3 id="scoreX">Xs: 0</h3>
+                    <h3 id="scoreO">Os: 0</h3>
+                    <h3 id="turn">Turn: Xs</h3>
+                    <h3 id="gameNumber">Round: 1</h3>
+                    <button id="historyButton" class="historyButton" onclick="showGameHistory()">Game History</button>
+                </div>
+            </div>
+        </div>
+        <div class="row"> 
+            <div class="col">
+                <button class="gameButton" id="a1" onclick="getButton('a1')"></button>
+                <button class="gameButton" id="a2" onclick="getButton('a2')"></button>
+                <button class="gameButton" id="a3" onclick="getButton('a3')"></button>
+            </div>
+        </div>
+
+        <div class="row"> 
+            <div class="col">
+                <button class="gameButton" id="b1" onclick="getButton('b1')"></button>
+                <button class="gameButton" id="b2" onclick="getButton('b2')"></button>
+                <button class="gameButton" id="b3" onclick="getButton('b3')"></button>
+            </div>
+        </div>
+
+        <div class="row"> 
+            <div class="col">
+                <button class="gameButton" id="c1" onclick="getButton('c1')"></button>
+                <button class="gameButton" id="c2" onclick="getButton('c2')"></button>
+                <button class="gameButton" id="c3" onclick="getButton('c3')"></button>
+            </div>
+        </div>
+    </div>
+    <footer>
+        Jacob Miller 2022
+    </footer>
+    <script src="scripts/gamecore.js"></script>
+</body>
+</html>
